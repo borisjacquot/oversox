@@ -6,6 +6,14 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
     console.log('My body is ready!');
+
+    client.user.setPresence({
+        status: "online",
+        activity: {
+            name: "ton winrate négatif",
+            type: "WATCHING"
+        }
+    });
 });
 
 // chargement des cmd
