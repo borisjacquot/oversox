@@ -45,6 +45,7 @@ module.exports = {
                                 value: points
                             }
                         )
+                    msg.edit("🎉 Joueur trouvé !");
                     msg.edit(embed);
                     message.react('✅');
                 }

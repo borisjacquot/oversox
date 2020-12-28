@@ -75,6 +75,7 @@ module.exports = {
                                 inline: true
                             }
                         )
+                    msg.edit("🎉 Joueur trouvé !");
                     msg.edit(embed);
                     message.react('✅');
 
