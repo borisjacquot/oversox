@@ -1,8 +1,13 @@
 const fs = require('fs');
 const Discord = require("discord.js");
 const config = require("./config.json");
+const { dotenv } = require("dotenv");
 
 const client = new Discord.Client();
+
+dotenv({
+    path: __dirname + "/.env"
+});
 
 client.once('ready', () => {
     console.log('My body is ready!');
@@ -50,4 +55,4 @@ client.on('message', message => {
 
 });
 
-client.login(config.BOT_TOKEN);
+client.login(process.env.TOKEN); // secret token
