@@ -13,6 +13,8 @@ module.exports = {
         const region = 'eu';
         const tag = args[0];
 
+        const msg = message.channel.send(`⌛ Recherche du joueur...`);
+
         OverwatchAPI.getProfile(platform, region, tag, (err, json) => {
             if (err) message.channel.send('Erreur de la requête. Assurez-vous que vous ayez bien écrit le battle tag de la sorte: `Pseudo-1234`');
             else {
@@ -74,7 +76,7 @@ module.exports = {
                             inline: true
                         }
                     )
-                message.channel.send(embed);
+                msg.edit(embed);
                 message.react('✅');
 
             }
