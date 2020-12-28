@@ -23,10 +23,10 @@ module.exports = {
                     points = json.competitive.tank.rank;
                 } else if (args[1] === "dps" || args[1] === "d") {
                     role = "⚔ DPS";
-                    points = json.competitive.tank.rank;
+                    points = json.competitive.dps.rank;
                 } else if (args[1] === "healer" || args[1] === "h") {
                     role = "💉 Healer";
-                    points = json.competitive.tank.rank;
+                    points = json.competitive.support.rank;
                 } else {
                     return message.reply('Erreur args: utiliser tank, healer ou dps');
                 }
