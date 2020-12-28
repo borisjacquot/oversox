@@ -20,5 +20,6 @@ module.exports = {
         }
 
         message.channel.send(`\`${command.name}\` a bien été reload!`);
+        message.react('✅');
     },
 };

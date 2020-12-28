@@ -39,6 +39,7 @@ module.exports = {
         if (command.usage) data.push(`**Utilisation:** ${config.PREFIX}${command.name} ${command.usage}`);
 
         message.channel.send(data, { split: true });
+        message.react('✅');
 
     },
 };

@@ -44,7 +44,7 @@ client.on('message', message => {
         if (command.usage) {
             reply += `\nUtilisation de la commande : \`${config.PREFIX}${command.name} ${command.usage}\``;
         }
-
+        message.react('❌');
         return message.channel.send(reply);
     }
 

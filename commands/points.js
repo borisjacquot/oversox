@@ -28,6 +28,7 @@ module.exports = {
                     role = "💉 Healer";
                     points = json.competitive.support.rank;
                 } else {
+                    message.react('❌');
                     return message.reply('Erreur args: utiliser tank, healer ou dps');
                 }
                 //EMBED
@@ -43,6 +44,7 @@ module.exports = {
                         }
                     )
                 message.channel.send(embed);
+                message.react('✅');
             }
         });
     },
