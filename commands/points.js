@@ -16,15 +16,17 @@ module.exports = {
         OverwatchAPI.getProfile(platform, region, tag, (err, json) => {
             if (err) message.channel.send('Erreur de la requête. Assurez-vous que vous ayez bien écrit le battle tag de la sorte: `Pseudo-1234`');
             else {
+                var role;
+                var points;
                 if (args[1] === "tank" || args[1] === "t") {
-                    const role = "🛡️ Tank";
-                    const points = json.competitive.tank.rank;
+                    role = "🛡️ Tank";
+                    points = json.competitive.tank.rank;
                 } else if (args[1] === "dps" || args[1] === "d") {
-                    const role = "⚔ DPS";
-                    const points = json.competitive.tank.rank;
+                    role = "⚔ DPS";
+                    points = json.competitive.tank.rank;
                 } else if (args[1] === "healer" || args[1] === "h") {
-                    const role = "💉 Healer";
-                    const points = json.competitive.tank.rank;
+                    role = "💉 Healer";
+                    points = json.competitive.tank.rank;
                 } else {
                     return message.reply('Erreur args: utiliser tank, healer ou dps');
                 }
