@@ -18,6 +18,7 @@ module.exports = {
                 if (err) message.channel.send('Erreur de la requête. Assurez-vous que vous ayez bien écrit le battle tag de la sorte: `Pseudo-1234`');
                 else {
                     //EMBED
+                    console.log(json);
                     const embed = new Discord.MessageEmbed()
                         .setColor("#545406")
                         .setDescription(`Voici les informations de la saison actuelle à propos de [${json.username}](https://playoverwatch.com/fr-fr/career/pc/${args[0]}) !\n\n`)

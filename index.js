@@ -1,6 +1,7 @@
 const fs = require('fs');
 const Discord = require("discord.js");
 const config = require("./config.json");
+require('./models/dbConfig');
 
 const client = new Discord.Client();
 
@@ -58,4 +59,4 @@ client.on('message', message => {
 
 });
 
-client.login(process.env.TOKEN); // secret token
+client.login("Njk0OTEyMjEzMzQwNzgyNzAy.XoShbg.HUTr6ogcrV0Gwfqo3H-R11QodY0"); // secret token

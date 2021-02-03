@@ -12,6 +12,8 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
-    "overwatch-api": "^0.10.4"
+    "mongoose": "^5.11.14",
+    "overwatch-api": "^0.10.4",
+    "riot-lol-api": "^4.3.2"
   }
 }
